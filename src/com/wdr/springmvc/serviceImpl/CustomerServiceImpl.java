@@ -16,8 +16,26 @@ public class CustomerServiceImpl implements CustomerService {
     private CustomerDao customerDao;
 
     @Override
-    @Transactional
+    @Transactional(rollbackOn = Exception.class)
     public List<Customer> getCustomers() {
         return customerDao.getCustomers();
+    }
+
+    @Override
+    @Transactional(rollbackOn = Exception.class)
+    public void saveCustomer(Customer customer) {
+        customerDao.saveCustomer(customer);
+    }
+
+    @Override
+    @Transactional(rollbackOn = Exception.class)
+    public Customer getCustomerById(int id) {
+        return customerDao.getCustomerById(id);
+    }
+
+    @Override
+    @Transactional
+    public void updateCustomer(Customer customer) {
+        customerDao.updateCustomer(customer);
     }
 }
