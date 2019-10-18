@@ -52,4 +52,13 @@ public class CustomerDaoImpl implements CustomerDao {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(customer);
     }
+
+    @Override
+    public void deleteCustomer(int id) {
+        Session currentSession = sessionFactory.getCurrentSession();
+
+        Customer customer = currentSession.get(Customer.class,id);
+
+        currentSession.delete(customer);
+    }
 }
