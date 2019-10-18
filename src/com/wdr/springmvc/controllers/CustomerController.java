@@ -1,7 +1,7 @@
 package com.wdr.springmvc.controllers;
 
-import com.wdr.springmvc.dao.CustomerDao;
 import com.wdr.springmvc.models.Customer;
+import com.wdr.springmvc.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -15,12 +15,12 @@ import java.util.List;
 public class CustomerController {
 
     @Autowired
-    private CustomerDao customerDao;
+    private CustomerService customerService;
 
     @GetMapping("/list")
     public String listCustomers(Model model){
 
-        List<Customer> listOfCustomers = customerDao.getCustomers();
+        List<Customer> listOfCustomers = customerService.getCustomers();
 
         model.addAttribute("customers",listOfCustomers);
 

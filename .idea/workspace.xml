@@ -7,10 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32d2aedb-8cec-4698-832d-dec32608a273" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/wdr/springmvc/dao/CustomerDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/wdr/springmvc/controllers/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/wdr/springmvc/controllers/CustomerController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/listCustomers.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/listCustomers.jsp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\ravindu_c\IdeaProjects\customer-web-tracker\web\resources\css" />
       <recent name="C:\Users\ravindu_c\IdeaProjects\customer-web-tracker\web\WEB-INF\lib" />
       <recent name="C:\Users\ravindu_c\IdeaProjects\customer-web-tracker\web\WEB-INF" />
     </key>
@@ -382,7 +381,7 @@
       <option name="presentableId" value="Default" />
       <updated>1571305513022</updated>
       <workItem from="1571305518248" duration="6554000" />
-      <workItem from="1571368553946" duration="3037000" />
+      <workItem from="1571368553946" duration="4710000" />
     </task>
     <servers />
   </component>
